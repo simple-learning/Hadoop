@@ -16,7 +16,7 @@ import org.junit.Test;
 public class NyseTest {
     MapDriver<LongWritable, Text, Text, FloatWritable> mapDriver;
     ReduceDriver<Text, FloatWritable, Text, FloatWritable> reduceDriver;
-    MapReduceDriver<LongWritable, Text, Text, FloatWritable, Text, FloatWritable> mapReduceDriver;
+    private MapReduceDriver<LongWritable, Text, Text, FloatWritable, Text, FloatWritable> mapReduceDriver;
 
     @Before
     public void setUp() {
@@ -37,9 +37,9 @@ public class NyseTest {
 
     @Test
     public void testReducer() throws IOException {
-        List<FloatWritable> values = new ArrayList<FloatWritable>();
-        values.add(new FloatWritable(1));
-        values.add(new FloatWritable(1));
+        List<FloatWritable> values = new ArrayList<>();
+        values.add(new FloatWritable(4.24f));
+        values.add(new FloatWritable(1f));
         reduceDriver.withInput(new Text("AEA"), values);
         reduceDriver.withOutput(new Text("AEA"), new FloatWritable(4.24f));
         reduceDriver.runTest();

@@ -61,7 +61,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.NyseTest.testMapReduce">
+  <component name="RunManager" selected="JUnit.NyseTest.testMapper">
     <configuration name="NyseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hadoopapp" />
       <option name="PACKAGE_NAME" value="" />
@@ -91,6 +91,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NyseTest.testReducer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hadoopapp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NyseTest" />
+      <option name="METHOD_NAME" value="testReducer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SMSCDRMapperReducerTest.testMapReduce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hadoopapp" />
       <option name="PACKAGE_NAME" value="" />
@@ -103,8 +113,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.NyseTest.testMapReduce" />
         <item itemvalue="JUnit.NyseTest.testMapper" />
+        <item itemvalue="JUnit.NyseTest.testReducer" />
+        <item itemvalue="JUnit.NyseTest.testMapReduce" />
         <item itemvalue="JUnit.NyseTest" />
         <item itemvalue="JUnit.SMSCDRMapperReducerTest.testMapReduce" />
       </list>
